@@ -1,13 +1,18 @@
-# Use the official PHP image
 FROM php:8.0-apache
 
-# Set the working directory to /var/www/html
-WORKDIR /var/www/html
+WORKDIR /var/www
 
-# Copy the current directory contents into the container at /var/www/html
-COPY . /var/www/html
+COPY ./laravel /var/www
 
+RUN apt-get update && \
+    apt-get install -y libzip-dev unzip && \
+    docker-php-ext-install zip pdo pdo_mysql && \
+    curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
-# Expose port 5508
-# 5508 က အလုပ်မဖြစ်။
-EXPOSE 80
+RUN composer install
+
+RUN php artisan key:generate
+
+EXPOSE 8000
+
+CMD ["php", "artisan", "serve", "--host=0.0.0.0"]

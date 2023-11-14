@@ -1,5 +1,12 @@
 # Docker for PHP
 
+## Docker Compose ဆိုတာဘာလဲ?
+
+Dockerfile ဆိုတာက အိုကေပြီ။
+လိုချင်တဲ့ Server Specification တွေနဲ့ Deployment Process ကို ကြိုရေးထားသလိုပဲ။
+
+ဒါမျိုးရေးထားတာတွေကို စုထားတာကို docker-compose.yml မှာ ရေးရတာလား?
+
 
 ဖုန်းက Hotspot လွှင့်ရင်ရပြီး
 ရုံးက LAN နဲ့ မရတဲ့ Docker Build :P
