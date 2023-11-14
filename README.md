@@ -1,6 +1,21 @@
 # Docker for PHP
 
 
+
+build မယ်ဆိုရင်
+```bash
+docker build -t our-desired-image-name .
+# ဉပမာ
+docker build -t laravel .
+```
+
+run မယ် ဆိုရင်
+
+```bash
+docker run -p 8080:80 laravel
+```
+
+
 ဖုန်းက Hotspot လွှင့်ရင်ရပြီး
 ရုံးက LAN နဲ့ မရတဲ့ Docker Build :P
 
