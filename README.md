@@ -1,6 +1,16 @@
 # Docker for PHP
 
 
+## 2023-11-15 Docker Hello World
+
+docker နဲ့ Hello World တော့ရပြီ။
+
+ဘာတွေဘယ်လိုဖြစ်နေလဲဆိုတာတော့ စာဖတ်ရမယ်။
+
+နောက် .env file တွေ
+
+နောက် docker တစ်ခုမှာ db run ထားတာကို နောက် docker တစ်ခုက access လုပ်ချင်တာတွေ။
+
 
 build မယ်ဆိုရင်
 ```bash
