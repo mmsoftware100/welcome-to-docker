@@ -1,5 +1,12 @@
 # Docker for PHP
 
+
+## ဘယ်လို build
+
+```bash
+docker build -t helloapache .
+docker run -lt -p 8888:8000 helloapache
+```
 ## Docker Compose ဆိုတာဘာလဲ?
 
 Dockerfile ဆိုတာက အိုကေပြီ။
